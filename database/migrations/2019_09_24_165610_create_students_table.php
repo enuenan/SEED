@@ -21,6 +21,7 @@ class CreateStudentsTable extends Migration
             $table->string('email');
             $table->integer('fee');
             $table->date('birth_date');
+            $table->string('ip_address');
             $table->timestamps();
         });
     }

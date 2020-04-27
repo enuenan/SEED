@@ -12,7 +12,8 @@ $factory->define(Student::class, function (Faker $faker) {
       'address' => $faker -> address,
       'contact' => $faker -> e164PhoneNumber,
       'fee' => $faker -> numberBetween($min = 1000, $max = 9000),
-      'birth_date' => $faker -> date($format = 'Y-m-d', $max = 'now')
+      'birth_date' => $faker -> date($format = 'Y-m-d', $max = 'now'),
+      'ip_address' => $faker -> ipv4
 
     ];
 });
